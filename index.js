@@ -22,7 +22,7 @@ let increaseRankBy = function(n) {
 let deepestChild = function() {
   let grandNode = document.querySelector('#grand-node');
   let child = grandNode.children[0];
-  while(child.children) {
+  while(child.length !=0) {
     child = child.children[0];
   }
   return child.innerHTML;
