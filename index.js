@@ -26,5 +26,5 @@ let deepestChild = function() {
     child = childList[0];
     childList = child.children;
   }
-  return child.innerHTML;
+  return child;
 }
