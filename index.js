@@ -13,7 +13,7 @@ let increaseRankBy = function(n) {
   for(let i=0;i<lists.length;i++) {
     let ranks = lists[i].querySelectorAll('li');
     for(let j=0;j<ranks.length;j++) {
-      newRank = parseInt(ranks[i].innerHTML) +n;
+      let newRank = parseInt(ranks[i].innerHTML) +n;
       ranks[i].innerHTML = newRank;
     }
   }
